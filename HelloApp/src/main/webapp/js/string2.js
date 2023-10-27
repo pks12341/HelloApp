@@ -41,7 +41,17 @@ console.log(checkGender(ssn));
 //let file = "d:/temp/sample/book.xls"; //뒤에서부터 찾기?앞에는ㄱ ㅏ변적일수있다 가정
 //let fileName, fileExt; //파일명과확장자...
 let file = "d:/temp/sample/book.xls";
-console.log(file.lastIndexOf('/'))
+let fileName,fileExt
+let a = file.split('.')
+console.log(a)
+fileExt=a[1]
+console.log('확장자' , fileExt)
 
+let b = a[0].split('/')
+console.log(b)
+fileName = b[b.length-1]
+console.log('파일명 ',fileName)
+
+console.log(fileName+","+fileExt)
 //	let fileName, fileExt;
 
